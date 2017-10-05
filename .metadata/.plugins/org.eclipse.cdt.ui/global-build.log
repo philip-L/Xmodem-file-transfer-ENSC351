@@ -1,0 +1,303 @@
+18:24:20 **** Clean-only build of configuration Debug for project Ensc351Part1 ****
+make clean 
+rm -rf  ./src/Ensc351Part1.o ./src/PeerX.o ./src/SenderX.o ./src/myIO.o  ./src/Ensc351Part1.d ./src/PeerX.d ./src/SenderX.d ./src/myIO.d  Ensc351Part1
+ 
+18:24:20 **** Build of configuration Debug for project Ensc351Part1 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+Finished building: ../src/Ensc351Part1.cpp
+ 
+Building file: ../src/PeerX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PeerX.d" -MT"src/PeerX.o" -o "src/PeerX.o" "../src/PeerX.cpp"
+Finished building: ../src/PeerX.cpp
+ 
+Building file: ../src/SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderX.d" -MT"src/SenderX.o" -o "src/SenderX.o" "../src/SenderX.cpp"
+Finished building: ../src/SenderX.cpp
+ 
+Building file: ../src/myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/myIO.d" -MT"src/myIO.o" -o "src/myIO.o" "../src/myIO.cpp"
+Finished building: ../src/myIO.cpp
+ 
+Building target: Ensc351Part1
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1"  ./src/Ensc351Part1.o ./src/PeerX.o ./src/SenderX.o ./src/myIO.o   
+Finished building target: Ensc351Part1
+ 
+18:24:30 **** Incremental Build of configuration Debug for project Ensc351Part1 ****
+make all 
+make: Nothing to be done for 'all'.
+17:31:45 **** Build of configuration Debug for project Ensc351Part1 ****
+make all 
+make: Warning: File 'objects.mk' has modification time 205 s in the future
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+Finished building: ../src/Ensc351Part1.cpp
+ 
+Building file: ../src/PeerX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PeerX.d" -MT"src/PeerX.o" -o "src/PeerX.o" "../src/PeerX.cpp"
+Finished building: ../src/PeerX.cpp
+ 
+Building file: ../src/SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderX.d" -MT"src/SenderX.o" -o "src/SenderX.o" "../src/SenderX.cpp"
+Finished building: ../src/SenderX.cpp
+ 
+Building file: ../src/myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/myIO.d" -MT"src/myIO.o" -o "src/myIO.o" "../src/myIO.cpp"
+Finished building: ../src/myIO.cpp
+ 
+Building target: Ensc351Part1
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1"  ./src/Ensc351Part1.o ./src/PeerX.o ./src/SenderX.o ./src/myIO.o   
+Finished building target: Ensc351Part1
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+18:31:20 **** Incremental Build of configuration Debug for project Ensc351Part1 ****
+make all 
+Building file: ../src/SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderX.d" -MT"src/SenderX.o" -o "src/SenderX.o" "../src/SenderX.cpp"
+../src/SenderX.cpp: In member function ‘void SenderX::sendFile()’:
+../src/SenderX.cpp:93:18: error: expected ‘)’ before ‘;’ token
+    genBlk(blkBuf); // prepare next block
+                  ^
+make: *** [src/SenderX.o] Error 1
+src/subdir.mk:27: recipe for target 'src/SenderX.o' failed
+18:34:02 **** Incremental Build of configuration Debug for project Ensc351Part1 ****
+make all 
+Building file: ../src/SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderX.d" -MT"src/SenderX.o" -o "src/SenderX.o" "../src/SenderX.cpp"
+Finished building: ../src/SenderX.cpp
+ 
+Building target: Ensc351Part1
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1"  ./src/Ensc351Part1.o ./src/PeerX.o ./src/SenderX.o ./src/myIO.o   
+Finished building target: Ensc351Part1
+ 
+18:59:12 **** Incremental Build of configuration Debug for project Ensc351Part1 ****
+make all 
+Building file: ../src/SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderX.d" -MT"src/SenderX.o" -o "src/SenderX.o" "../src/SenderX.cpp"
+Finished building: ../src/SenderX.cpp
+ 
+Building target: Ensc351Part1
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1"  ./src/Ensc351Part1.o ./src/PeerX.o ./src/SenderX.o ./src/myIO.o   
+Finished building target: Ensc351Part1
+ 
+19:25:27 **** Incremental Build of configuration Debug for project Ensc351Part1 ****
+make all 
+Building file: ../src/SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderX.d" -MT"src/SenderX.o" -o "src/SenderX.o" "../src/SenderX.cpp"
+../src/SenderX.cpp: In member function ‘void SenderX::genBlk(uint8_t*)’:
+../src/SenderX.cpp:66:6: warning: unused variable ‘blkNumCalculated’ [-Wunused-variable]
+  int blkNumCalculated = blkNum;
+      ^
+Finished building: ../src/SenderX.cpp
+ 
+Building target: Ensc351Part1
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1"  ./src/Ensc351Part1.o ./src/PeerX.o ./src/SenderX.o ./src/myIO.o   
+Finished building target: Ensc351Part1
+ 
+21:27:14 **** Incremental Build of configuration Debug for project Ensc351Part1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:56:21 **** Incremental Build of configuration Debug for project Ensc351Part1 ****
+make all 
+make: Nothing to be done for 'all'.
+14:56:53 **** Incremental Build of configuration Debug for project Ensc351Part1 ****
+make all 
+make: Nothing to be done for 'all'.
+15:00:19 **** Incremental Build of configuration Debug for project Ensc351Part1 ****
+make all 
+make: Warning: File 'src/subdir.mk' has modification time 90 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+21:39:37 **** Incremental Build of configuration Debug for project Ensc351Part1 ****
+make all 
+make: Warning: File 'src/subdir.mk' has modification time 12 s in the future
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+Finished building: ../src/Ensc351Part1.cpp
+ 
+Building file: ../src/PeerX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PeerX.d" -MT"src/PeerX.o" -o "src/PeerX.o" "../src/PeerX.cpp"
+Finished building: ../src/PeerX.cpp
+ 
+Building file: ../src/SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderX.d" -MT"src/SenderX.o" -o "src/SenderX.o" "../src/SenderX.cpp"
+Finished building: ../src/SenderX.cpp
+ 
+Building file: ../src/myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/myIO.d" -MT"src/myIO.o" -o "src/myIO.o" "../src/myIO.cpp"
+Finished building: ../src/myIO.cpp
+ 
+Building target: Ensc351Part1
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1"  ./src/Ensc351Part1.o ./src/PeerX.o ./src/SenderX.o ./src/myIO.o   
+Finished building target: Ensc351Part1
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+17:01:55 **** Clean-only build of configuration Debug for project Ensc351 ****
+make clean 
+rm -rf  ./AtomicConsole.o ./ScopedMutex.o ./SocketReadcond.o ./VNPE.o ./ss_api.o  ./ScopedMutex.d ./ss_api.d  ./AtomicConsole.d ./SocketReadcond.d ./VNPE.d  libEnsc351.a
+ 
+17:01:56 **** Build of configuration Debug for project Ensc351 ****
+make all 
+Building file: ../AtomicConsole.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AtomicConsole.d" -MT"AtomicConsole.o" -o "AtomicConsole.o" "../AtomicConsole.c"
+Finished building: ../AtomicConsole.c
+ 
+Building file: ../ScopedMutex.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ScopedMutex.d" -MT"ScopedMutex.o" -o "ScopedMutex.o" "../ScopedMutex.cpp"
+Finished building: ../ScopedMutex.cpp
+ 
+Building file: ../SocketReadcond.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SocketReadcond.d" -MT"SocketReadcond.o" -o "SocketReadcond.o" "../SocketReadcond.c"
+Finished building: ../SocketReadcond.c
+ 
+Building file: ../VNPE.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"VNPE.d" -MT"VNPE.o" -o "VNPE.o" "../VNPE.c"
+Finished building: ../VNPE.c
+ 
+Building file: ../ss_api.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ss_api.d" -MT"ss_api.o" -o "ss_api.o" "../ss_api.cpp"
+Finished building: ../ss_api.cpp
+ 
+Building target: libEnsc351.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351.a"  ./AtomicConsole.o ./ScopedMutex.o ./SocketReadcond.o ./VNPE.o ./ss_api.o   
+ar: creating libEnsc351.a
+Finished building target: libEnsc351.a
+ 
+17:01:59 **** Build of configuration Debug for project Ensc351Part2 ****
+make all 
+Building file: ../src/Ensc351Part2.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part2.d" -MT"src/Ensc351Part2.o" -o "src/Ensc351Part2.o" "../src/Ensc351Part2.cpp"
+Finished building: ../src/Ensc351Part2.cpp
+ 
+Building file: ../src/Medium.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Medium.d" -MT"src/Medium.o" -o "src/Medium.o" "../src/Medium.cpp"
+Finished building: ../src/Medium.cpp
+ 
+Building file: ../src/PeerX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PeerX.d" -MT"src/PeerX.o" -o "src/PeerX.o" "../src/PeerX.cpp"
+Finished building: ../src/PeerX.cpp
+ 
+Building file: ../src/ReceiverX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ReceiverX.d" -MT"src/ReceiverX.o" -o "src/ReceiverX.o" "../src/ReceiverX.cpp"
+Finished building: ../src/ReceiverX.cpp
+ 
+Building file: ../src/SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderX.d" -MT"src/SenderX.o" -o "src/SenderX.o" "../src/SenderX.cpp"
+Finished building: ../src/SenderX.cpp
+ 
+Building file: ../src/myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/myIO.d" -MT"src/myIO.o" -o "src/myIO.o" "../src/myIO.cpp"
+Finished building: ../src/myIO.cpp
+ 
+Building target: Ensc351Part2
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -o "Ensc351Part2"  ./src/Ensc351Part2.o ./src/Medium.o ./src/PeerX.o ./src/ReceiverX.o ./src/SenderX.o ./src/myIO.o   -lEnsc351 -lpthread
+Finished building target: Ensc351Part2
+ 
+17:02:09 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Nothing to be done for 'all'.
+17:02:09 **** Incremental Build of configuration Debug for project Ensc351Part2 ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:16 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:16 **** Incremental Build of configuration Debug for project Ensc351Part1 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+Finished building: ../src/Ensc351Part1.cpp
+ 
+Building file: ../src/PeerX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PeerX.d" -MT"src/PeerX.o" -o "src/PeerX.o" "../src/PeerX.cpp"
+Finished building: ../src/PeerX.cpp
+ 
+Building file: ../src/SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderX.d" -MT"src/SenderX.o" -o "src/SenderX.o" "../src/SenderX.cpp"
+Finished building: ../src/SenderX.cpp
+ 
+Building file: ../src/myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/myIO.d" -MT"src/myIO.o" -o "src/myIO.o" "../src/myIO.cpp"
+Finished building: ../src/myIO.cpp
+ 
+Building target: Ensc351Part1
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1"  ./src/Ensc351Part1.o ./src/PeerX.o ./src/SenderX.o ./src/myIO.o   
+Finished building target: Ensc351Part1
+ 
+17:14:20 **** Incremental Build of configuration Debug for project Ensc351Part2 ****
+make all 
+Building file: ../src/Medium.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Medium.d" -MT"src/Medium.o" -o "src/Medium.o" "../src/Medium.cpp"
+Finished building: ../src/Medium.cpp
+ 
+Building target: Ensc351Part2
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -o "Ensc351Part2"  ./src/Ensc351Part2.o ./src/Medium.o ./src/PeerX.o ./src/ReceiverX.o ./src/SenderX.o ./src/myIO.o   -lEnsc351 -lpthread
+Finished building target: Ensc351Part2
+ 
+17:14:24 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Nothing to be done for 'all'.
+17:14:25 **** Incremental Build of configuration Debug for project Ensc351Part2 ****
+make all 
+make: Nothing to be done for 'all'.
+19:01:57 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Nothing to be done for 'all'.
+19:01:58 **** Incremental Build of configuration Debug for project Ensc351Part1 ****
+make all 
+make: Nothing to be done for 'all'.
+19:01:58 **** Incremental Build of configuration Debug for project Ensc351Part2 ****
+make all 
+Building file: ../src/SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderX.d" -MT"src/SenderX.o" -o "src/SenderX.o" "../src/SenderX.cpp"
+Finished building: ../src/SenderX.cpp
+ 
+Building target: Ensc351Part2
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -o "Ensc351Part2"  ./src/Ensc351Part2.o ./src/Medium.o ./src/PeerX.o ./src/ReceiverX.o ./src/SenderX.o ./src/myIO.o   -lEnsc351 -lpthread
+Finished building target: Ensc351Part2
+ 
