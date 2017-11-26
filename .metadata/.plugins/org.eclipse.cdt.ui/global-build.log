@@ -301,3 +301,653 @@ Invoking: GCC C++ Linker
 g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -o "Ensc351Part2"  ./src/Ensc351Part2.o ./src/Medium.o ./src/PeerX.o ./src/ReceiverX.o ./src/SenderX.o ./src/myIO.o   -lEnsc351 -lpthread
 Finished building target: Ensc351Part2
  
+00:20:27 **** Build of configuration Debug for project Ensc351 ****
+make all 
+Building file: ../AtomicConsole.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AtomicConsole.d" -MT"AtomicConsole.o" -o "AtomicConsole.o" "../AtomicConsole.c"
+Finished building: ../AtomicConsole.c
+ 
+Building file: ../ScopedMutex.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ScopedMutex.d" -MT"ScopedMutex.o" -o "ScopedMutex.o" "../ScopedMutex.cpp"
+Finished building: ../ScopedMutex.cpp
+ 
+Building file: ../SocketReadcond.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SocketReadcond.d" -MT"SocketReadcond.o" -o "SocketReadcond.o" "../SocketReadcond.c"
+Finished building: ../SocketReadcond.c
+ 
+Building file: ../VNPE.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"VNPE.d" -MT"VNPE.o" -o "VNPE.o" "../VNPE.c"
+Finished building: ../VNPE.c
+ 
+Building file: ../ss_api.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ss_api.d" -MT"ss_api.o" -o "ss_api.o" "../ss_api.cpp"
+Finished building: ../ss_api.cpp
+ 
+Building target: libEnsc351.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351.a"  ./AtomicConsole.o ./ScopedMutex.o ./SocketReadcond.o ./VNPE.o ./ss_api.o   
+ar: creating libEnsc351.a
+Finished building target: libEnsc351.a
+ 
+00:20:33 **** Build of configuration Debug for project Ensc351x-myio ****
+make all 
+Building file: ../myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"myIO.d" -MT"myIO.o" -o "myIO.o" "../myIO.cpp"
+Finished building: ../myIO.cpp
+ 
+Building target: libEnsc351x-myio.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351x-myio.a"  ./myIO.o   
+ar: creating libEnsc351x-myio.a
+Finished building target: libEnsc351x-myio.a
+ 
+00:20:34 **** Build of configuration Debug for project Ensc351xmodem ****
+make all 
+Building file: ../PeerX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2CodedBySmartState/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PeerX.d" -MT"PeerX.o" -o "PeerX.o" "../PeerX.cpp"
+Finished building: ../PeerX.cpp
+ 
+Building file: ../ReceiverX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2CodedBySmartState/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReceiverX.d" -MT"ReceiverX.o" -o "ReceiverX.o" "../ReceiverX.cpp"
+Finished building: ../ReceiverX.cpp
+ 
+Building file: ../SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2CodedBySmartState/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SenderX.d" -MT"SenderX.o" -o "SenderX.o" "../SenderX.cpp"
+Finished building: ../SenderX.cpp
+ 
+Building target: libEnsc351xmodem.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351xmodem.a"  ./PeerX.o ./ReceiverX.o ./SenderX.o   
+ar: creating libEnsc351xmodem.a
+Finished building target: libEnsc351xmodem.a
+ 
+00:20:42 **** Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+Building file: ../Medium.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Medium.d" -MT"Medium.o" -o "Medium.o" "../Medium.cpp"
+Finished building: ../Medium.cpp
+ 
+Building file: ../main.cc
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cc"
+Finished building: ../main.cc
+ 
+Building target: libEnsc351Part2SolnLib.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351Part2SolnLib.a"  ./Medium.o ./main.o   
+ar: creating libEnsc351Part2SolnLib.a
+Finished building target: libEnsc351Part2SolnLib.a
+ 
+00:20:50 **** Clean-only build of configuration Debug for project Ensc351Part2HandCoded ****
+make clean 
+rm -rf  ./src/ReceiverSS.o ./src/SenderSS.o  ./src/ReceiverSS.d ./src/SenderSS.d  Ensc351Part2HandCoded
+ 
+00:20:51 **** Build of configuration Debug for project Ensc351Part2HandCoded ****
+make all 
+Building file: ../src/ReceiverSS.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ReceiverSS.d" -MT"src/ReceiverSS.o" -o "src/ReceiverSS.o" "../src/ReceiverSS.cpp"
+Finished building: ../src/ReceiverSS.cpp
+ 
+Building file: ../src/SenderSS.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderSS.d" -MT"src/SenderSS.o" -o "src/SenderSS.o" "../src/SenderSS.cpp"
+Finished building: ../src/SenderSS.cpp
+ 
+Building target: Ensc351Part2HandCoded
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351x-myio/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug" -o "Ensc351Part2HandCoded"  ./src/ReceiverSS.o ./src/SenderSS.o   -lEnsc351Part2SolnLib -lEnsc351xmodem -lEnsc351x-myio -lEnsc351 -lpthread
+Finished building target: Ensc351Part2HandCoded
+ 
+00:21:01 **** Clean-only build of configuration Debug for project Ensc351Part2CodedBySmartState ****
+make clean 
+rm -rf  ./src/ReceiverSS.o ./src/SenderSS.o  ./src/ReceiverSS.d ./src/SenderSS.d  Ensc351Part2CodedBySmartState
+ 
+00:21:02 **** Build of configuration Debug for project Ensc351Part2CodedBySmartState ****
+make all 
+Building file: ../src/ReceiverSS.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -Wno-unused-variable -Wno-unknown-pragmas -MMD -MP -MF"src/ReceiverSS.d" -MT"src/ReceiverSS.o" -o "src/ReceiverSS.o" "../src/ReceiverSS.cpp"
+Finished building: ../src/ReceiverSS.cpp
+ 
+Building file: ../src/SenderSS.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -Wno-unused-variable -Wno-unknown-pragmas -MMD -MP -MF"src/SenderSS.d" -MT"src/SenderSS.o" -o "src/SenderSS.o" "../src/SenderSS.cpp"
+Finished building: ../src/SenderSS.cpp
+ 
+Building target: Ensc351Part2CodedBySmartState
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351x-myio/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug" -o "Ensc351Part2CodedBySmartState"  ./src/ReceiverSS.o ./src/SenderSS.o   -lEnsc351Part2SolnLib -lEnsc351x-myio -lEnsc351xmodem -lEnsc351 -lpthread
+Finished building target: Ensc351Part2CodedBySmartState
+ 
+00:21:34 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Nothing to be done for 'all'.
+00:21:35 **** Incremental Build of configuration Debug for project Ensc351x-myio ****
+make all 
+make: Nothing to be done for 'all'.
+00:21:35 **** Incremental Build of configuration Debug for project Ensc351xmodem ****
+make all 
+make: Nothing to be done for 'all'.
+00:21:35 **** Incremental Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+make: Nothing to be done for 'all'.
+00:21:36 **** Incremental Build of configuration Debug for project Ensc351Part2HandCoded ****
+make all 
+make: Nothing to be done for 'all'.
+00:29:22 **** Build of configuration Debug for project Ensc351 ****
+make all 
+Building file: ../AtomicConsole.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AtomicConsole.d" -MT"AtomicConsole.o" -o "AtomicConsole.o" "../AtomicConsole.c"
+Finished building: ../AtomicConsole.c
+ 
+Building file: ../ScopedMutex.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ScopedMutex.d" -MT"ScopedMutex.o" -o "ScopedMutex.o" "../ScopedMutex.cpp"
+Finished building: ../ScopedMutex.cpp
+ 
+Building file: ../SocketReadcond.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SocketReadcond.d" -MT"SocketReadcond.o" -o "SocketReadcond.o" "../SocketReadcond.c"
+Finished building: ../SocketReadcond.c
+ 
+Building file: ../VNPE.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"VNPE.d" -MT"VNPE.o" -o "VNPE.o" "../VNPE.c"
+Finished building: ../VNPE.c
+ 
+Building file: ../ss_api.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ss_api.d" -MT"ss_api.o" -o "ss_api.o" "../ss_api.cpp"
+Finished building: ../ss_api.cpp
+ 
+Building target: libEnsc351.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351.a"  ./AtomicConsole.o ./ScopedMutex.o ./SocketReadcond.o ./VNPE.o ./ss_api.o   
+ar: creating libEnsc351.a
+Finished building target: libEnsc351.a
+ 
+00:29:28 **** Build of configuration Debug for project Ensc351x-myio ****
+make all 
+Building file: ../myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"myIO.d" -MT"myIO.o" -o "myIO.o" "../myIO.cpp"
+Finished building: ../myIO.cpp
+ 
+Building target: libEnsc351x-myio.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351x-myio.a"  ./myIO.o   
+ar: creating libEnsc351x-myio.a
+Finished building target: libEnsc351x-myio.a
+ 
+00:29:33 **** Build of configuration Debug for project Ensc351xmodem ****
+make all 
+make: Nothing to be done for 'all'.
+00:29:34 **** Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+make: Nothing to be done for 'all'.
+00:29:35 **** Build of configuration Debug for project Ensc351Part2HandCoded ****
+make all 
+Building target: Ensc351Part2HandCoded
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug" -o "Ensc351Part2HandCoded"  ./src/ReceiverSS.o ./src/SenderSS.o   -lEnsc351Part2SolnLib -lEnsc351xmodem -lEnsc351x-myio -lEnsc351 -lpthread
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a(main.o): In function `termFunc(int)':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../main.cc:75: undefined reference to `myClose(int)'
+makefile:48: recipe for target 'Ensc351Part2HandCoded' failed
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../main.cc:100: undefined reference to `myClose(int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a(main.o): In function `main':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../main.cc:122: undefined reference to `mySocketpair(int, int, int, int*)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../main.cc:123: undefined reference to `mySocketpair(int, int, int, int*)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a(Medium.o): In function `Medium::Medium(int, int, char const*)':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:39: undefined reference to `myCreat(char const*, unsigned int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a(Medium.o): In function `Medium::MsgFromTerm2()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:53: undefined reference to `myRead(int, void*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:77: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:84: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:85: undefined reference to `myTcdrain(int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a(Medium.o): In function `Medium::MsgFromTerm1()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:94: undefined reference to `myRead(int, void*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:130: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a(Medium.o): In function `Medium::run()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:162: undefined reference to `myClose(int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:163: undefined reference to `myClose(int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(PeerX.o): In function `PeerX::sendByte(unsigned char)':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../PeerX.cpp:110: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(ReceiverX.o): In function `ReceiverX::receiveFile()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../ReceiverX.cpp:63: undefined reference to `myCreat(char const*, unsigned int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../ReceiverX.cpp:71: undefined reference to `myRead(int, void*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(ReceiverX.o): In function `ReceiverX::getRestBlk()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../ReceiverX.cpp:93: undefined reference to `myReadcond(int, void*, int, int, int, int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(ReceiverX.o): In function `ReceiverX::can8()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../ReceiverX.cpp:157: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(SenderX.o): In function `SenderX::dumpGlitches()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:68: undefined reference to `myReadcond(int, void*, int, int, int, int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(SenderX.o): In function `SenderX::sendMostBlk(unsigned char*)':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:78: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(SenderX.o): In function `SenderX::sendLastByte(unsigned char)':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:87: undefined reference to `myTcdrain(int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:90: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(SenderX.o): In function `SenderX::can8()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:200: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(SenderX.o): In function `SenderX::sendFile()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:209: undefined reference to `myOpen(char const*, int, unsigned int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:220: undefined reference to `myRead(int, void*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:224: undefined reference to `myClose(int)'
+collect2: error: ld returned 1 exit status
+make: *** [Ensc351Part2HandCoded] Error 1
+00:29:40 **** Build of configuration Debug for project Ensc351Part2CodedBySmartState ****
+make all 
+Building target: Ensc351Part2CodedBySmartState
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug" -o "Ensc351Part2CodedBySmartState"  ./src/ReceiverSS.o ./src/SenderSS.o   -lEnsc351Part2SolnLib -lEnsc351x-myio -lEnsc351xmodem -lEnsc351 -lpthread
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a(main.o): In function `termFunc(int)':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../main.cc:75: undefined reference to `myClose(int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../main.cc:100: undefined reference to `myClose(int)'
+makefile:48: recipe for target 'Ensc351Part2CodedBySmartState' failed
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a(main.o): In function `main':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../main.cc:122: undefined reference to `mySocketpair(int, int, int, int*)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../main.cc:123: undefined reference to `mySocketpair(int, int, int, int*)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a(Medium.o): In function `Medium::Medium(int, int, char const*)':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:39: undefined reference to `myCreat(char const*, unsigned int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a(Medium.o): In function `Medium::MsgFromTerm2()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:53: undefined reference to `myRead(int, void*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:77: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:84: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:85: undefined reference to `myTcdrain(int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a(Medium.o): In function `Medium::MsgFromTerm1()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:94: undefined reference to `myRead(int, void*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:130: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a(Medium.o): In function `Medium::run()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:162: undefined reference to `myClose(int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/../Medium.cpp:163: undefined reference to `myClose(int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(PeerX.o): In function `PeerX::sendByte(unsigned char)':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../PeerX.cpp:110: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(ReceiverX.o): In function `ReceiverX::receiveFile()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../ReceiverX.cpp:63: undefined reference to `myCreat(char const*, unsigned int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../ReceiverX.cpp:71: undefined reference to `myRead(int, void*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(ReceiverX.o): In function `ReceiverX::getRestBlk()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../ReceiverX.cpp:93: undefined reference to `myReadcond(int, void*, int, int, int, int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(ReceiverX.o): In function `ReceiverX::can8()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../ReceiverX.cpp:157: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(SenderX.o): In function `SenderX::dumpGlitches()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:68: undefined reference to `myReadcond(int, void*, int, int, int, int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(SenderX.o): In function `SenderX::sendMostBlk(unsigned char*)':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:78: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(SenderX.o): In function `SenderX::sendLastByte(unsigned char)':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:87: undefined reference to `myTcdrain(int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:90: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(SenderX.o): In function `SenderX::can8()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:200: undefined reference to `myWrite(int, void const*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/libEnsc351xmodem.a(SenderX.o): In function `SenderX::sendFile()':
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:209: undefined reference to `myOpen(char const*, int, unsigned int)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:220: undefined reference to `myRead(int, void*, unsigned long)'
+/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated/Ensc351xmodem/Debug/../SenderX.cpp:224: undefined reference to `myClose(int)'
+collect2: error: ld returned 1 exit status
+make: *** [Ensc351Part2CodedBySmartState] Error 1
+00:36:02 **** Clean-only build of configuration Debug for project Ensc351 ****
+make clean 
+rm -rf  ./AtomicConsole.o ./ScopedMutex.o ./SocketReadcond.o ./VNPE.o ./ss_api.o  ./ScopedMutex.d ./ss_api.d  ./AtomicConsole.d ./SocketReadcond.d ./VNPE.d  libEnsc351.a
+ 
+00:36:03 **** Clean-only build of configuration Debug for project Ensc351Part2CodedBySmartState ****
+make clean 
+rm -rf  ./src/ReceiverSS.o ./src/SenderSS.o  ./src/ReceiverSS.d ./src/SenderSS.d  Ensc351Part2CodedBySmartState
+ 
+00:36:04 **** Clean-only build of configuration Debug for project Ensc351Part2HandCoded ****
+make clean 
+rm -rf  ./src/ReceiverSS.o ./src/SenderSS.o  ./src/ReceiverSS.d ./src/SenderSS.d  Ensc351Part2HandCoded
+ 
+00:36:05 **** Clean-only build of configuration Debug for project Ensc351Part2SolnLib ****
+make clean 
+rm -rf  ./main.d  ./Medium.o ./main.o  ./Medium.d  libEnsc351Part2SolnLib.a
+ 
+00:36:05 **** Clean-only build of configuration Debug for project Ensc351x-myio ****
+make clean 
+rm -rf  ./myIO.o  ./myIO.d  libEnsc351x-myio.a
+ 
+00:36:05 **** Clean-only build of configuration Debug for project Ensc351xmodem ****
+make clean 
+rm -rf  ./PeerX.o ./ReceiverX.o ./SenderX.o  ./PeerX.d ./ReceiverX.d ./SenderX.d  libEnsc351xmodem.a
+ 
+00:36:10 **** Build of configuration Debug for project Ensc351 ****
+make all 
+make: Warning: File 'objects.mk' has modification time 2.6 s in the future
+Building file: ../AtomicConsole.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AtomicConsole.d" -MT"AtomicConsole.o" -o "AtomicConsole.o" "../AtomicConsole.c"
+Finished building: ../AtomicConsole.c
+ 
+Building file: ../ScopedMutex.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ScopedMutex.d" -MT"ScopedMutex.o" -o "ScopedMutex.o" "../ScopedMutex.cpp"
+Finished building: ../ScopedMutex.cpp
+ 
+Building file: ../SocketReadcond.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SocketReadcond.d" -MT"SocketReadcond.o" -o "SocketReadcond.o" "../SocketReadcond.c"
+Finished building: ../SocketReadcond.c
+ 
+Building file: ../VNPE.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"VNPE.d" -MT"VNPE.o" -o "VNPE.o" "../VNPE.c"
+Finished building: ../VNPE.c
+ 
+Building file: ../ss_api.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ss_api.d" -MT"ss_api.o" -o "ss_api.o" "../ss_api.cpp"
+Finished building: ../ss_api.cpp
+ 
+Building target: libEnsc351.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351.a"  ./AtomicConsole.o ./ScopedMutex.o ./SocketReadcond.o ./VNPE.o ./ss_api.o   
+ar: creating libEnsc351.a
+Finished building target: libEnsc351.a
+make: warning:  Clock skew detected.  Your build may be incomplete.
+ 
+00:36:16 **** Build of configuration Debug for project Ensc351x-myio ****
+make all 
+make: Warning: File 'objects.mk' has modification time 2.7 s in the future
+Building file: ../myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"myIO.d" -MT"myIO.o" -o "myIO.o" "../myIO.cpp"
+Finished building: ../myIO.cpp
+ 
+Building target: libEnsc351x-myio.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351x-myio.a"  ./myIO.o   
+ar: creating libEnsc351x-myio.a
+Finished building target: libEnsc351x-myio.a
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:36:21 **** Build of configuration Debug for project Ensc351xmodem ****
+make all 
+make: Warning: File 'objects.mk' has modification time 2.7 s in the future
+Building file: ../PeerX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2CodedBySmartState/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PeerX.d" -MT"PeerX.o" -o "PeerX.o" "../PeerX.cpp"
+Finished building: ../PeerX.cpp
+ 
+Building file: ../ReceiverX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2CodedBySmartState/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReceiverX.d" -MT"ReceiverX.o" -o "ReceiverX.o" "../ReceiverX.cpp"
+Finished building: ../ReceiverX.cpp
+ 
+Building file: ../SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2CodedBySmartState/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SenderX.d" -MT"SenderX.o" -o "SenderX.o" "../SenderX.cpp"
+Finished building: ../SenderX.cpp
+ 
+Building target: libEnsc351xmodem.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351xmodem.a"  ./PeerX.o ./ReceiverX.o ./SenderX.o   
+ar: creating libEnsc351xmodem.a
+Finished building target: libEnsc351xmodem.a
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:36:28 **** Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+make: Warning: File 'objects.mk' has modification time 3.1 s in the future
+Building file: ../Medium.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Medium.d" -MT"Medium.o" -o "Medium.o" "../Medium.cpp"
+Finished building: ../Medium.cpp
+ 
+Building file: ../main.cc
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cc"
+Finished building: ../main.cc
+ 
+Building target: libEnsc351Part2SolnLib.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351Part2SolnLib.a"  ./Medium.o ./main.o   
+ar: creating libEnsc351Part2SolnLib.a
+Finished building target: libEnsc351Part2SolnLib.a
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:36:36 **** Build of configuration Debug for project Ensc351Part2HandCoded ****
+make all 
+make: Warning: File 'objects.mk' has modification time 2.4 s in the future
+Building file: ../src/ReceiverSS.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ReceiverSS.d" -MT"src/ReceiverSS.o" -o "src/ReceiverSS.o" "../src/ReceiverSS.cpp"
+Finished building: ../src/ReceiverSS.cpp
+ 
+Building file: ../src/SenderSS.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderSS.d" -MT"src/SenderSS.o" -o "src/SenderSS.o" "../src/SenderSS.cpp"
+Finished building: ../src/SenderSS.cpp
+ 
+Building target: Ensc351Part2HandCoded
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug" -o "Ensc351Part2HandCoded"  ./src/ReceiverSS.o ./src/SenderSS.o   -lEnsc351Part2SolnLib -lEnsc351xmodem -lEnsc351x-myio -lEnsc351 -lpthread
+make: warning:  Clock skew detected.  Your build may be incomplete.
+Finished building target: Ensc351Part2HandCoded
+ 
+00:36:47 **** Build of configuration Debug for project Ensc351Part2CodedBySmartState ****
+make all 
+make: Warning: File 'objects.mk' has modification time 2.6 s in the future
+Building file: ../src/ReceiverSS.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -Wno-unused-variable -Wno-unknown-pragmas -MMD -MP -MF"src/ReceiverSS.d" -MT"src/ReceiverSS.o" -o "src/ReceiverSS.o" "../src/ReceiverSS.cpp"
+Finished building: ../src/ReceiverSS.cpp
+ 
+Building file: ../src/SenderSS.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -Wno-unused-variable -Wno-unknown-pragmas -MMD -MP -MF"src/SenderSS.d" -MT"src/SenderSS.o" -o "src/SenderSS.o" "../src/SenderSS.cpp"
+Finished building: ../src/SenderSS.cpp
+ 
+Building target: Ensc351Part2CodedBySmartState
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug" -o "Ensc351Part2CodedBySmartState"  ./src/ReceiverSS.o ./src/SenderSS.o   -lEnsc351Part2SolnLib -lEnsc351x-myio -lEnsc351xmodem -lEnsc351 -lpthread
+make: warning:  Clock skew detected.  Your build may be incomplete.
+Finished building target: Ensc351Part2CodedBySmartState
+ 
+00:37:03 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Warning: File 'objects.mk' has modification time 2.5 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:37:03 **** Incremental Build of configuration Debug for project Ensc351x-myio ****
+make all 
+make: Warning: File 'objects.mk' has modification time 3.1 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:37:04 **** Incremental Build of configuration Debug for project Ensc351xmodem ****
+make all 
+make: Warning: File 'objects.mk' has modification time 2.7 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:37:04 **** Incremental Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 3.1 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:37:05 **** Incremental Build of configuration Debug for project Ensc351Part2HandCoded ****
+make all 
+make: Warning: File 'src/subdir.mk' has modification time 2.5 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:37:18 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Warning: File 'objects.mk' has modification time 3.1 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:37:19 **** Incremental Build of configuration Debug for project Ensc351x-myio ****
+make all 
+make: Warning: File 'objects.mk' has modification time 2.6 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:37:19 **** Incremental Build of configuration Debug for project Ensc351xmodem ****
+make all 
+make: Warning: File 'objects.mk' has modification time 3.2 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:37:20 **** Incremental Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.7 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:37:20 **** Incremental Build of configuration Debug for project Ensc351Part2CodedBySmartState ****
+make all 
+make: Warning: File 'src/subdir.mk' has modification time 3.2 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:37:39 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.7 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:37:39 **** Incremental Build of configuration Debug for project Ensc351x-myio ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.3 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:37:40 **** Incremental Build of configuration Debug for project Ensc351xmodem ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.8 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:37:40 **** Incremental Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.3 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:37:40 **** Incremental Build of configuration Debug for project Ensc351Part2HandCoded ****
+make all 
+make: Warning: File 'src/subdir.mk' has modification time 3 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:37:54 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.5 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:37:54 **** Incremental Build of configuration Debug for project Ensc351x-myio ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 3.1 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:37:55 **** Incremental Build of configuration Debug for project Ensc351xmodem ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.7 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:37:55 **** Incremental Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 3.3 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:37:56 **** Incremental Build of configuration Debug for project Ensc351Part2HandCoded ****
+make all 
+make: Warning: File 'src/subdir.mk' has modification time 2.9 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:38:44 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.6 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:38:44 **** Incremental Build of configuration Debug for project Ensc351x-myio ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 3.2 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:38:45 **** Incremental Build of configuration Debug for project Ensc351xmodem ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.9 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:38:45 **** Incremental Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.4 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:38:45 **** Incremental Build of configuration Debug for project Ensc351Part2CodedBySmartState ****
+make all 
+make: Warning: File 'src/subdir.mk' has modification time 3.1 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:39:01 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 3 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:39:02 **** Incremental Build of configuration Debug for project Ensc351x-myio ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.7 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:39:02 **** Incremental Build of configuration Debug for project Ensc351xmodem ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.4 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:39:02 **** Incremental Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 3 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:39:03 **** Incremental Build of configuration Debug for project Ensc351Part2CodedBySmartState ****
+make all 
+make: Warning: File 'src/subdir.mk' has modification time 2.7 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:39:21 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.7 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:39:21 **** Incremental Build of configuration Debug for project Ensc351x-myio ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.4 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:39:21 **** Incremental Build of configuration Debug for project Ensc351xmodem ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 3.1 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:39:22 **** Incremental Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+make: Warning: File 'subdir.mk' has modification time 2.8 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:39:22 **** Incremental Build of configuration Debug for project Ensc351Part2CodedBySmartState ****
+make all 
+make: Warning: File 'src/subdir.mk' has modification time 2.4 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+make: Nothing to be done for 'all'.
+00:41:41 **** Clean-only build of configuration Debug for project Ensc351 ****
+make clean 
+rm -rf  ./AtomicConsole.o ./ScopedMutex.o ./SocketReadcond.o ./VNPE.o ./ss_api.o  ./ScopedMutex.d ./ss_api.d  ./AtomicConsole.d ./SocketReadcond.d ./VNPE.d  libEnsc351.a
+ 
+00:41:44 **** Clean-only build of configuration Debug for project Ensc351Part2CodedBySmartState ****
+make clean 
+rm -rf  ./src/ReceiverSS.o ./src/SenderSS.o  ./src/ReceiverSS.d ./src/SenderSS.d  Ensc351Part2CodedBySmartState
+ 
+00:41:45 **** Clean-only build of configuration Debug for project Ensc351Part2HandCoded ****
+make clean 
+rm -rf  ./src/ReceiverSS.o ./src/SenderSS.o  ./src/ReceiverSS.d ./src/SenderSS.d  Ensc351Part2HandCoded
+ 
+00:41:45 **** Clean-only build of configuration Debug for project Ensc351Part2SolnLib ****
+make clean 
+rm -rf  ./main.d  ./Medium.o ./main.o  ./Medium.d  libEnsc351Part2SolnLib.a
+ 
+00:41:46 **** Clean-only build of configuration Debug for project Ensc351x-myio ****
+make clean 
+rm -rf  ./myIO.o  ./myIO.d  libEnsc351x-myio.a
+ 
+00:41:46 **** Clean-only build of configuration Debug for project Ensc351xmodem ****
+make clean 
+rm -rf  ./PeerX.o ./ReceiverX.o ./SenderX.o  ./PeerX.d ./ReceiverX.d ./SenderX.d  libEnsc351xmodem.a
+ 
