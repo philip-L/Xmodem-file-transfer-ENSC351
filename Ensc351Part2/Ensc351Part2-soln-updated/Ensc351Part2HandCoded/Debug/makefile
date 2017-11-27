@@ -41,13 +41,13 @@ endif
 all: Ensc351Part2HandCoded
 
 dependents:
-	-cd /media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug && $(MAKE) all
+	-cd /media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug && $(MAKE) clean all
 
 # Tool invocations
 Ensc351Part2HandCoded: $(OBJS) $(USER_OBJS) /media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug" -o "Ensc351Part2HandCoded" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug" -o "Ensc351Part2HandCoded" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

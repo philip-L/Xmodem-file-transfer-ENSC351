@@ -1111,3 +1111,182 @@ make: Nothing to be done for 'all'.
 00:53:56 **** Incremental Build of configuration Debug for project Ensc351Part2HandCoded ****
 make all 
 make: Nothing to be done for 'all'.
+18:51:07 **** Clean-only build of configuration Debug for project Ensc351 ****
+make clean 
+rm -rf  ./AtomicConsole.o ./ScopedMutex.o ./SocketReadcond.o ./VNPE.o ./ss_api.o  ./ScopedMutex.d ./ss_api.d  ./AtomicConsole.d ./SocketReadcond.d ./VNPE.d  libEnsc351.a
+ 
+18:51:08 **** Clean-only build of configuration Debug for project Ensc351Part2CodedBySmartState ****
+make clean 
+rm -rf  ./src/ReceiverSS.o ./src/SenderSS.o  ./src/ReceiverSS.d ./src/SenderSS.d  Ensc351Part2CodedBySmartState
+ 
+18:51:08 **** Clean-only build of configuration Debug for project Ensc351Part2HandCoded ****
+make clean 
+rm -rf  ./src/ReceiverSS.o ./src/SenderSS.o  ./src/ReceiverSS.d ./src/SenderSS.d  Ensc351Part2HandCoded
+ 
+18:51:09 **** Clean-only build of configuration Debug for project Ensc351Part2SolnLib ****
+make clean 
+rm -rf  ./main.d  ./Medium.o ./main.o  ./Medium.d  libEnsc351Part2SolnLib.a
+ 
+18:51:09 **** Clean-only build of configuration Debug for project Ensc351x-myio ****
+make clean 
+rm -rf  ./myIO.o  ./myIO.d  libEnsc351x-myio.a
+ 
+18:51:09 **** Clean-only build of configuration Debug for project Ensc351xmodem ****
+make clean 
+rm -rf  ./PeerX.o ./ReceiverX.o ./SenderX.o  ./PeerX.d ./ReceiverX.d ./SenderX.d  libEnsc351xmodem.a
+ 
+18:51:15 **** Build of configuration Debug for project Ensc351 ****
+make all 
+Building file: ../AtomicConsole.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AtomicConsole.d" -MT"AtomicConsole.o" -o "AtomicConsole.o" "../AtomicConsole.c"
+Finished building: ../AtomicConsole.c
+ 
+Building file: ../ScopedMutex.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ScopedMutex.d" -MT"ScopedMutex.o" -o "ScopedMutex.o" "../ScopedMutex.cpp"
+Finished building: ../ScopedMutex.cpp
+ 
+Building file: ../SocketReadcond.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SocketReadcond.d" -MT"SocketReadcond.o" -o "SocketReadcond.o" "../SocketReadcond.c"
+Finished building: ../SocketReadcond.c
+ 
+Building file: ../VNPE.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"VNPE.d" -MT"VNPE.o" -o "VNPE.o" "../VNPE.c"
+Finished building: ../VNPE.c
+ 
+Building file: ../ss_api.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ss_api.d" -MT"ss_api.o" -o "ss_api.o" "../ss_api.cpp"
+Finished building: ../ss_api.cpp
+ 
+Building target: libEnsc351.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351.a"  ./AtomicConsole.o ./ScopedMutex.o ./SocketReadcond.o ./VNPE.o ./ss_api.o   
+ar: creating libEnsc351.a
+Finished building target: libEnsc351.a
+ 
+18:51:22 **** Build of configuration Debug for project Ensc351x-myio ****
+make all 
+Building file: ../myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"myIO.d" -MT"myIO.o" -o "myIO.o" "../myIO.cpp"
+Finished building: ../myIO.cpp
+ 
+Building target: libEnsc351x-myio.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351x-myio.a"  ./myIO.o   
+ar: creating libEnsc351x-myio.a
+Finished building target: libEnsc351x-myio.a
+ 
+18:51:28 **** Build of configuration Debug for project Ensc351xmodem ****
+make all 
+Building file: ../PeerX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2CodedBySmartState/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PeerX.d" -MT"PeerX.o" -o "PeerX.o" "../PeerX.cpp"
+Finished building: ../PeerX.cpp
+ 
+Building file: ../ReceiverX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2CodedBySmartState/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ReceiverX.d" -MT"ReceiverX.o" -o "ReceiverX.o" "../ReceiverX.cpp"
+Finished building: ../ReceiverX.cpp
+ 
+Building file: ../SenderX.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2CodedBySmartState/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SenderX.d" -MT"SenderX.o" -o "SenderX.o" "../SenderX.cpp"
+Finished building: ../SenderX.cpp
+ 
+Building target: libEnsc351xmodem.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351xmodem.a"  ./PeerX.o ./ReceiverX.o ./SenderX.o   
+ar: creating libEnsc351xmodem.a
+Finished building target: libEnsc351xmodem.a
+ 
+18:51:37 **** Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+Building file: ../Medium.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Medium.d" -MT"Medium.o" -o "Medium.o" "../Medium.cpp"
+Finished building: ../Medium.cpp
+ 
+Building file: ../main.cc
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cc"
+Finished building: ../main.cc
+ 
+Building target: libEnsc351Part2SolnLib.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351Part2SolnLib.a"  ./Medium.o ./main.o   
+ar: creating libEnsc351Part2SolnLib.a
+Finished building target: libEnsc351Part2SolnLib.a
+ 
+18:51:46 **** Build of configuration Debug for project Ensc351Part2HandCoded ****
+make all 
+Building file: ../src/ReceiverSS.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ReceiverSS.d" -MT"src/ReceiverSS.o" -o "src/ReceiverSS.o" "../src/ReceiverSS.cpp"
+Finished building: ../src/ReceiverSS.cpp
+ 
+Building file: ../src/SenderSS.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderSS.d" -MT"src/SenderSS.o" -o "src/SenderSS.o" "../src/SenderSS.cpp"
+Finished building: ../src/SenderSS.cpp
+ 
+Building target: Ensc351Part2HandCoded
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug" -o "Ensc351Part2HandCoded"  ./src/ReceiverSS.o ./src/SenderSS.o   -lEnsc351Part2SolnLib -lEnsc351xmodem -lEnsc351x-myio -lEnsc351 -lpthread
+Finished building target: Ensc351Part2HandCoded
+ 
+18:51:57 **** Build of configuration Debug for project Ensc351Part2CodedBySmartState ****
+make all 
+Building file: ../src/ReceiverSS.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -Wno-unused-variable -Wno-unknown-pragmas -MMD -MP -MF"src/ReceiverSS.d" -MT"src/ReceiverSS.o" -o "src/ReceiverSS.o" "../src/ReceiverSS.cpp"
+Finished building: ../src/ReceiverSS.cpp
+ 
+Building file: ../src/SenderSS.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -O0 -g3 -Wall -c -fmessage-length=0 -Wno-unused-variable -Wno-unknown-pragmas -MMD -MP -MF"src/SenderSS.d" -MT"src/SenderSS.o" -o "src/SenderSS.o" "../src/SenderSS.cpp"
+Finished building: ../src/SenderSS.cpp
+ 
+Building target: Ensc351Part2CodedBySmartState
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug" -o "Ensc351Part2CodedBySmartState"  ./src/ReceiverSS.o ./src/SenderSS.o   -lEnsc351Part2SolnLib -lEnsc351x-myio -lEnsc351xmodem -lEnsc351 -lpthread
+Finished building target: Ensc351Part2CodedBySmartState
+ 
+18:53:18 **** Incremental Build of configuration Debug for project Ensc351 ****
+make all 
+make: Nothing to be done for 'all'.
+18:53:19 **** Incremental Build of configuration Debug for project Ensc351x-myio ****
+make all 
+make: Nothing to be done for 'all'.
+18:53:19 **** Incremental Build of configuration Debug for project Ensc351xmodem ****
+make all 
+make: Nothing to be done for 'all'.
+18:53:20 **** Incremental Build of configuration Debug for project Ensc351Part2SolnLib ****
+make all 
+Building file: ../Medium.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Medium.d" -MT"Medium.o" -o "Medium.o" "../Medium.cpp"
+Finished building: ../Medium.cpp
+ 
+Building file: ../main.cc
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351" -I"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cc"
+Finished building: ../main.cc
+ 
+Building target: libEnsc351Part2SolnLib.a
+Invoking: GCC Archiver
+ar -r  "libEnsc351Part2SolnLib.a"  ./Medium.o ./main.o   
+ar: creating libEnsc351Part2SolnLib.a
+Finished building target: libEnsc351Part2SolnLib.a
+ 
+18:53:24 **** Incremental Build of configuration Debug for project Ensc351Part2HandCoded ****
+make all 
+Building target: Ensc351Part2HandCoded
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug" -o "Ensc351Part2HandCoded"  ./src/ReceiverSS.o ./src/SenderSS.o   -lEnsc351Part2SolnLib -lEnsc351xmodem -lEnsc351x-myio -lEnsc351 -lpthread
+Finished building target: Ensc351Part2HandCoded
+ 
