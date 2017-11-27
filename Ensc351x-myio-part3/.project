@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Ensc351Part1</name>
+	<name>Ensc351x-myio</name>
 	<comment></comment>
 	<projects>
+		<project>Ensc351</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

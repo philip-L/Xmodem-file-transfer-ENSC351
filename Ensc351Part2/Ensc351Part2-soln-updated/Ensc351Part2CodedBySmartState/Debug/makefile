@@ -41,7 +41,7 @@ endif
 all: Ensc351Part2CodedBySmartState
 
 dependents:
-	-cd /media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug && $(MAKE) all
+	-cd /media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug && $(MAKE) clean all
 
 # Tool invocations
 Ensc351Part2CodedBySmartState: $(OBJS) $(USER_OBJS) /media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug/libEnsc351Part2SolnLib.a
