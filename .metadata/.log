@@ -1020,3 +1020,16 @@ org.eclipse.core.internal.resources.ResourceException: The project description f
 
 !ENTRY org.eclipse.cdt.core 1 0 2017-11-26 18:52:45.612
 !MESSAGE Indexed 'Ensc351Part2HandCoded' (2 sources, 180 headers) in 10.1 sec: 17,804 declarations; 28,516 references; 0 unresolved inclusions; 0 syntax errors; 6 unresolved names (0.013%)
+!SESSION 2017-12-15 11:33:47.340 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-12-15 11:33:53.444
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-12-15 11:37:48.690
+!MESSAGE Indexed 'finalPrep' (1 sources, 197 headers) in 36.4 sec: 22,157 declarations; 34,491 references; 0 unresolved inclusions; 0 syntax errors; 8 unresolved names (0.014%)

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2-soln-updated"/>
+		<item value="/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="486" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="371" key="DIALOG_HEIGHT"/>
+		<item value="477" key="DIALOG_X_ORIGIN"/>
+		<item value="206" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

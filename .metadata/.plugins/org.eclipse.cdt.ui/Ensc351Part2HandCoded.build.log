@@ -1,0 +1,10 @@
+18:53:24 **** Incremental Build of configuration Debug for project Ensc351Part2HandCoded ****
+make all 
+Building target: Ensc351Part2HandCoded
+Invoking: GCC C++ Linker
+g++ -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351x-myio-Circbuf/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351xmodem/Debug" -L"/media/sf_U_ensc251/workspace-cpp-Neon3/Ensc351Part2/Ensc351Part2-soln-updated/Ensc351Part2SolnLib/Debug" -o "Ensc351Part2HandCoded"  ./src/ReceiverSS.o ./src/SenderSS.o   -lEnsc351Part2SolnLib -lEnsc351xmodem -lEnsc351x-myio -lEnsc351 -lpthread
+Finished building target: Ensc351Part2HandCoded
+ 
+
+18:53:26 Build Finished (took 1s.642ms)
+
